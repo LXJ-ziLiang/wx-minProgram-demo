@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/canvas/index",
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

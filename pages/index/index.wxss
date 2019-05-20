@@ -1,0 +1,43 @@
+/**index.wxss**/
+.container{
+  overflow: hidden;
+}
+
+.startGame{
+  width: 266rpx;
+
+}
+.temp_seq{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.imagesLoop{
+  display: block;
+  width: 600rpx;
+  height: 145.28rpx;
+  margin: 0 auto ;
+  overflow: hidden;
+}
+.imageChild{
+  width: 120rpx;
+  -webkit-transition: all 0.2s ease-in  ;
+  -webkit-transform: scale(0.6);
+  opacity: 0.6;
+  z-index: 7;
+}
+
+.imageChild.state2{
+  -webkit-transform: scale(0.8);
+  opacity: 0.8;
+  z-index: 8;
+
+}
+.imageChild.cur{
+  -webkit-transform: scale(1);
+  opacity: 1;
+  z-index: 9;
+
+}
+

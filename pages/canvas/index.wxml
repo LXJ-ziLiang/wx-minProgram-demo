@@ -1,0 +1,12 @@
+<!--pages/canvas/index.wxml-->
+<!--index.wxml-->
+<view class='container' style='height:{{Window_height}}px'>
+  <view class='main'>
+    <view style='width:100%;text-align : center ;'>Loading....{{loadingProgress}}%</view>
+    <canvas class='temp_seq' canvas-id='temp_seq' style='width:{{canvas_w}}px; height:{{canvas_h}}px'></canvas>
+
+
+  </view>
+
+
+</view>

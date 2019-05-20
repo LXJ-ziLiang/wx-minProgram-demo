@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class='container' style='height:{{Window_height}}px'>
+  <view class='main'>
+
+    <image class='startGame' src='{{gameStart}}' mode='widthFix'></image>
+    
+    <canvas class='temp_seq' canvas-id='temp_seq' style='width:{{canvas_w}}px; height:{{canvas_h}}px'></canvas>
+
+    <swiper class='imagesLoop'  current="{{cur_theme}}"  display-multiple-items="5" previous_margin="0px" next-margin="0px" circular="true" bindchange='swipeChange' bindanimationfinish="swipeAnimFinish" >
+      <swiper-item wx:for="{{loopContainer}}"  >
+        <image class='imageChild imageChild{{index}} {{index == __curSeq[0] || index == __curSeq[4]? "" : index == __curSeq[1]  || index == __curSeq[3]?"state2" : index == __curSeq[2]?"cur" :"" }}' src='{{item}}' mode='widthFix'></image>
+
+
+      </swiper-item>
+    </swiper>
+
+  </view>
+
+
+</view>
